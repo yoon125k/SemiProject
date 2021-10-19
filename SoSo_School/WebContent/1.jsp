@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+    <% request.setCharacterEncoding("UTF-8"); %>
+    <% response.setContentType("text/html; charset=UTF-8"); %>
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -139,12 +143,18 @@
                 배울 수 있습니다.<br>
                 <span>국어,영어,수학과목을 쉽고 재미있게</span>
                 </p>
-                <a href="2.jsp" type="button" class="cta">학습하기</a>
+                <a href="2.jsp" type="button" class="cta" onclick="login();">학습하기</a>
+           
             </div>
         </div>
     </section>
     
     <footer><%@ include file="/form/footer.jsp"%></footer>
-
 </body>
+
+<script type="text/javascript">
+	function login(){
+		location.href="2.jsp";
+	}
+</script>
 </html>

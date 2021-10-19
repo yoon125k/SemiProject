@@ -180,14 +180,14 @@
     </div>
     
     <div class="container">
-        <form action="">
-            <div class="form-group">
+        <form method="post" action="logincontroller?command=login">
+              <div class="form-group">
                 <label for="">ID</label>
-                <input type="text" class="form-control" placeholder="아이디를 입력하세요." required>
+                <input type="text" name="userId" class="form-control" placeholder="아이디를 입력하세요." required>
             </div>
             <div class="form-group">
                 <label for="">PASSWORD</label>
-                <input type="password" class="form-control" placeholder="●●●●●●●●●●●●" required>
+                <input type="password" name="userPassword" class="form-control" placeholder="●●●●●●●●●●●●" required>
             </div>
             <input type="submit" class="btn" value="로그인">
         </form>
